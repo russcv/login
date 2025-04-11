@@ -19,6 +19,7 @@ Content-Type: application/json
 }
 
 
-### Protected route: Get user profile (replace <token> with actual JWT)
+### Protected route: Get user profile
+# ⚠️ Replace <token> below with the actual token returned from the login response
 GET http://localhost:5000/api/auth/profile
 Authorization: Bearer <token>
