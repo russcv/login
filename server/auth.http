@@ -1,0 +1,24 @@
+### Register a new user
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "secret123"
+}
+
+
+### Login with existing user
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "john@example.com",
+  "password": "secret123"
+}
+
+
+### Protected route: Get user profile (replace <token> with actual JWT)
+GET http://localhost:5000/api/auth/profile
+Authorization: Bearer <token>
